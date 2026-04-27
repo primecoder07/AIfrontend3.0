@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Career Analyzer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="logo">AI CAREER</div>
+  <div class="nav-links">
+    <span>Dashboard</span>
+    <span>Analysis</span>
+    <span>Test</span>
+    <span>Results</span>
+    <span>Explore</span>
+  </div>
+</nav>
+
+<div class="container">
+
+  <!-- STEP 1 -->
+  <div class="step active" id="step1">
+    <h2>Let's Analyze Your Career</h2>
+    <input placeholder="Your Name">
+    <input placeholder="Education">
+    <input placeholder="Skills">
+    <input placeholder="Interests">
+    <input placeholder="Career Goals">
+    <button onclick="nextStep()">Next</button>
+  </div>
+
+  <!-- STEP 2 -->
+  <div class="step" id="step2">
+    <h2>Upload Resume</h2>
+    <div class="upload-box">Drag & Drop Resume</div>
+    <button onclick="nextStep()">Next</button>
+  </div>
+
+  <!-- STEP 3 -->
+  <div class="step" id="step3">
+    <h2>SWOT Analysis</h2>
+
+    <div class="grid">
+      <div class="card">Strengths</div>
+      <div class="card">Weaknesses</div>
+      <div class="card">Opportunities</div>
+      <div class="card">Threats</div>
+    </div>
+
+    <button onclick="nextStep()">Next</button>
+  </div>
+
+  <!-- STEP 4 -->
+  <div class="step" id="step4">
+    <h2>Results Dashboard</h2>
+
+    <div class="dashboard">
+      <div class="panel">SWOT</div>
+      <div class="panel">Resume Score</div>
+      <div class="panel">Career Suggestions</div>
+      <div class="panel">Action Plan</div>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

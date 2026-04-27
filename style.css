@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: linear-gradient(#050505, #0b0b0b);
+  color: white;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  border-bottom: 1px solid #ff2e2e33;
+}
+
+.logo {
+  color: #ff2e2e;
+  font-weight: bold;
+}
+
+.nav-links span {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.nav-links span:hover {
+  color: #ff2e2e;
+}
+
+/* Container */
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+/* Steps */
+.step {
+  display: none;
+  width: 400px;
+  padding: 30px;
+  border-radius: 15px;
+
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+
+  border: 1px solid #ff2e2e44;
+  box-shadow: 0 0 20px #ff2e2e22;
+}
+
+.step.active {
+  display: block;
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+
+  background: transparent;
+  border: 1px solid #ff2e2e;
+  color: white;
+}
+
+/* Button */
+button {
+  margin-top: 20px;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  background: #ff2e2e;
+  color: white;
+  cursor: pointer;
+
+  box-shadow: 0 0 10px #ff2e2e;
+}
+
+button:hover {
+  background: #ff4500;
+  box-shadow: 0 0 20px #ff4500;
+}
+
+/* Upload Box */
+.upload-box {
+  border: 2px dashed #ff2e2e;
+  padding: 40px;
+  text-align: center;
+  margin: 20px 0;
+
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from { box-shadow: 0 0 10px #ff2e2e; }
+  to { box-shadow: 0 0 25px #ff4500; }
+}
+
+/* SWOT Grid */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.card {
+  padding: 20px;
+  border: 1px solid #ff2e2e44;
+  text-align: center;
+}
+
+/* Dashboard */
+.dashboard {
+  display: grid;
+  gap: 10px;
+}
+
+.panel {
+  padding: 20px;
+  border: 1px solid #ff2e2e44;
+}
